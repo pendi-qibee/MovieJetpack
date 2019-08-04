@@ -25,7 +25,6 @@ class MovieListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentMovieListBinding.inflate(inflater, container, false)
             .apply { lifecycleOwner = this@MovieListFragment }
 
@@ -35,7 +34,6 @@ class MovieListFragment : Fragment() {
             resultItem?.let {
                 movieList = resultItem
                 linearLayoutManager = LinearLayoutManager(context)
-                //        mAdapter = MovieRvAdapter(context, movieList)
                 binding.rvMovie.layoutManager = linearLayoutManager
                 binding.rvMovie.adapter = mAdapter
 
