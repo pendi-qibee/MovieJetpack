@@ -29,9 +29,14 @@ android {
         enabled = true
     }
 
-    testOptions {
-        unitTests.returnDefaultValues = true
-    }
+//    testOptions {
+//        unitTests.returnDefaultValues = true
+//    }
+
+    useLibrary 'android.test.runner'
+
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.mock'
 
 }
 
@@ -57,13 +62,25 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation "com.squareup.picasso:picasso:$picassoVersion"
     kapt "com.android.databinding:compiler:$android_plugin_version"
+    implementation "org.jetbrains.anko:anko-commons:0.10.8"
+    implementation "androidx.fragment:fragment-ktx:$androidXFragmentTestVersion"
 
+    debugImplementation "androidx.fragment:fragment-testing:$androidXFragmentTestVersion"
+    debugImplementation 'androidx.test:core:1.2.0'
+
+    debugImplementation 'androidx.test:rules:1.2.0'
+    testImplementation "androidx.test.ext:junit:$androidXTestJunitVersion"
+    testImplementation 'androidx.test:core:1.2.0'
+    testImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     testImplementation "org.mockito:mockito-core:$mockitoVersion"
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
     testImplementation 'junit:junit:4.12'
     testImplementation "androidx.arch.core:core-testing:$archLifecycleVersion"
 
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test:rules:1.2.0'
+
+    androidTestImplementation "androidx.test.ext:junit:$androidXTestJunitVersion"
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation "androidx.test:runner:$androidXTestVersion"
+    androidTestImplementation "androidx.fragment:fragment-testing:$androidXFragmentTestVersion"
+    androidTestImplementation 'androidx.test:core:1.2.0'
 }

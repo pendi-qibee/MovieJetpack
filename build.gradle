@@ -36,8 +36,8 @@ ext {
     // App dependencies
     androidXVersion = '1.0.0'
     androidXTestVersion = '1.1.0'
-    androidXAnnotations = '1.0.1'
-    androidXLegacySupport = '1.0.0'
+    androidXTestJunitVersion = '1.1.0'
+    androidXFragmentTestVersion = '1.1.0-rc04'
     materialVersion = '1.0.0'
     cardVersion = '1.0.0'
     recyclerViewVersion = '1.0.0'
@@ -55,4 +55,5 @@ ext {
     glideVersion = '4.9.0'
     idleResourceVersion = '3.1.1'
     picassoVersion='2.71828'
+    fragmenVersion='1.2.0-alpha01'
 }
