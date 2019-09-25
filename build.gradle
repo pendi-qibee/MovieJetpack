@@ -34,6 +34,7 @@ task clean(type: Delete) {
 
 ext {
     // App dependencies
+    // todo: remove unused line
     androidXVersion = '1.0.0'
     androidXTestVersion = '1.1.0'
     androidXTestJunitVersion = '1.1.0'
