@@ -1,10 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.3.41'
-    ext.navigationVersion = '2.0.0'
+    ext.kotlin_version = '1.3.61'
+    ext.navigationVersion = '2.2.0'
     ext.navigationSafeArgs = '1.0.0'
-    ext.android_plugin_version= '3.4.2'
+    ext.android_plugin_version= '3.5.3'
     repositories {
         google()
         jcenter()
@@ -35,12 +35,12 @@ task clean(type: Delete) {
 ext {
     // App dependencies
     androidXVersion = '1.0.0'
-    androidXTestVersion = '1.1.0'
+    androidXTestVersion = '1.2.0'
     androidXTestJunitVersion = '1.1.0'
-    androidXFragmentTestVersion = '1.1.0-rc04'
+    androidXFragmentTestVersion = '1.2.0'
     materialVersion = '1.0.0'
     cardVersion = '1.0.0'
-    recyclerViewVersion = '1.0.0'
+    recyclerViewVersion = '1.1.0'
     appCompatVersion = '1.0.2'
     constraintLayoutVersion = "1.1.3"
     roomVersion = '2.0.0'
@@ -50,10 +50,6 @@ ext {
     hamcrestVersion = '1.3'
     mockitoVersion = '2.27.0'
     espressoVersion = '3.1.0'
-    dexMakerVersion = "1.2"
-    pagingVersion = '2.1.0'
     glideVersion = '4.9.0'
-    idleResourceVersion = '3.1.1'
     picassoVersion='2.71828'
-    fragmenVersion='1.2.0-alpha01'
 }
